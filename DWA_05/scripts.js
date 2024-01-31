@@ -1,7 +1,14 @@
 const form = document.querySelector('[data-form]')
 const result = document.querySelector('[data-result]')
 
-form.addEventListener('submit', (event) => {
+/**
+ * An event handler function that evaluates and divides two inputs entered by the user;
+ * divident and divider. Both these values should be whole numbers in order
+ * for the division to work.
+ * The function has a try block to catch errors caused by entry of the incorrect values in the inputs
+ * @param {Event} event - The event of submitting the form
+ */
+const wholeNumberDivisionHandler = (event) => {
   event.preventDefault()
   const entries = new FormData(event.target)
   const {dividend, divider} = Object.fromEntries(entries)
@@ -26,4 +33,5 @@ form.addEventListener('submit', (event) => {
   } catch (e) {
     console.log(e)
   }
-})
+}
+form.addEventListener('submit', wholeNumberDivisionHandler)
