@@ -1,10 +1,10 @@
 import {html} from './htmlReferences.js'
-import {settingsSubmitButton, overlayButtons} from './buttons.js'
+import {overlayButtons} from './buttons.js'
 import {previewBook} from './previewBooks.js'
 import {first36Books} from './displayBooks.js'
 import {loadGenresAuthors} from './genreAndAuthorOptions.js'
 import {books, BOOKS_PER_PAGE} from './data.js'
-import {setTheme} from './theme.js'
+import {settingsSubmitButton, setTheme} from './theme.js'
 import {searchThroughBooks, showMoreBooksSearch} from './search.js'
 
 export let page = 1

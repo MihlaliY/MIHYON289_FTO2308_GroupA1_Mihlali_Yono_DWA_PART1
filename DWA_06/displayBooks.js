@@ -1,9 +1,12 @@
+// ts-check
 import {matches} from './scripts.js'
 import {BOOKS_PER_PAGE, authors} from './data.js'
 import {html} from './htmlReferences.js'
 
 /**
  * This funtions is responsible for loading the first 36 books seen by the user on the app
+ * The function loops over the matches( books ) and loads the different elements to the created DOM document.
+ * @return {void}
  */
 export const first36Books = () => {
   const starting = document.createDocumentFragment()

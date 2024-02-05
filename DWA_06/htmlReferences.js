@@ -1,3 +1,7 @@
+/**
+ * An object containing all the html references that need to be accessed by JavaScript through
+ * the DOM
+ */
 export const html = {
   header: {
     search: document.querySelector('[data-header-search]'),

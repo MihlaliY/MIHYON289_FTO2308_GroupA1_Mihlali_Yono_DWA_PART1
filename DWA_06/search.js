@@ -2,6 +2,11 @@ import {html} from './htmlReferences.js'
 import {matches, page} from './scripts.js'
 import {books, BOOKS_PER_PAGE, authors} from './data.js'
 
+/**
+ * This function has an event listener with an anonymous function that fires when the submit button of the
+ * search form is clicked
+ * Depending on what the user searches for the document will show results if not found a message will be displayed to the user.
+ */
 export const searchThroughBooks = () => {
   html.search.form.addEventListener('submit', (event) => {
     event.preventDefault()
@@ -71,6 +76,10 @@ export const searchThroughBooks = () => {
   })
 }
 
+/**
+ * This function is responsible for the books shown when the search button is clicked
+ * This function laods books to the DOM according to the search results.
+ */
 export const showMoreBooksSearch = () => {
   const fragment = document.createDocumentFragment()
 

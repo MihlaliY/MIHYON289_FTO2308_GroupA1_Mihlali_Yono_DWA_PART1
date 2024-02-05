@@ -1,7 +1,12 @@
 import {html} from './htmlReferences.js'
 import {books, authors} from './data.js'
 
-//Preview code for the buttons / books
+/**
+ * This function is responsible for the previewing of the books in the app
+ * When a book is clicked a modal is displayed with an image of the book, a short description
+ * and the date published.
+ * @param {Event} event
+ */
 export const previewBook = (event) => {
   const pathArray = Array.from(event.path || event.composedPath())
   let active = null
