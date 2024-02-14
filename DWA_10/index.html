@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.13.1/cdn/themes/light.css"
+    />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.13.1/cdn/shoelace-autoloader.js"
+    ></script>
+    <script type="module" src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Tally app</h1>
+    <input readonly class="tallyNumber" data-set="tallyCountNumber" value="0" />
+    <div id="tallyNumber_actions">
+      <sl-button
+        variant="default"
+        size="large"
+        style="width: 100%"
+        data-set="subtraction"
+        class="controls"
+        >-</sl-button
+      >
+      <sl-button
+        variant="default"
+        size="large"
+        style="width: 100%"
+        data-set="addition"
+        class="controls"
+        >+</sl-button
+      >
+    </div>
+    <sl-button variant="default" size="large" data-set="reset">
+      <sl-icon slot="suffix" name="arrow-counterclockwise"></sl-icon>
+      Reset
+    </sl-button>
+  </body>
+</html>
