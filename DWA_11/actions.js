@@ -49,7 +49,7 @@ export const subtractCounter = () => {
  * @returns {Reset}
  */
 
-export const ResetCounter = () => {
+export const resetCounter = () => {
   return {
     type: 'RESET',
   }
